@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+
+    margin: 0;
+    font-family: Roboto, Georgia;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La altura minima de la pagina es todo la pantalla */
+}
+
+header {
+    display: flex;
+
+    height: 7vw;
+    background-color: #2B2D42;
+
+
+    flex-direction: row;
+    justify-content: space-between; /* Deja un espacio entre medio de los elementos */
+    align-items:  center;
+
+}
+
+header h1 {
+    font-size: 3vw;
+    color: #EDF2F4;
+    margin-left: 1vw;
+}
+
+header ul {
+    display: flex;
+    
+    height: 7vw;
+
+    flex-direction: row;
+    gap: 2vw;
+    margin-right: 1vw;
+
+    justify-content: space-evenly;
+    align-items: center; 
+
+    list-style-type: none;
+}
+
+header ul li a {
+
+    color: #8D99AE; /*  #f3d646; */
+    font-weight: 500;
+
+
+    font-size: 1.7vw;
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out;
+}
+
+header ul li a:hover {
+    font-size: 1.9vw;
+    color: white;
+}
+
+
+/* MAIN */
+
+main h1 {
+
+    margin: 1vw;
+
+    font-size: 7vw;
+    color: white;
+}
+
+
+main h2 {
+    font-size: 5vw;
+}
+
+main h2, p {
+
+    margin: 1vw;
+    color: white;
+}
+
+.sobre_mi {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EF233C;
+    border-bottom: 3px solid white;
+}
+
+
+section .foto_cv {
+    height: 50vw;
+    width: auto;
+    
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%); /* Recorta el borde izquierdo en diagonal de la imagen */
+}
+
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+ 
+    background-color: #D90429; 
+}
+
+section .foto_proyecto {
+    height: 20.4vw;
+    width: auto;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    
+    background-color: black;
+    margin-top: auto;
+    height: 5vw;
+
+    align-items: center;
+
+}
+
+footer ul {
+
+
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+
+}
+
+footer img {
+    background-color: #D90429;
+    border-radius: 4vw;
+    border: 1px solid #D90429;
+    padding: 1px;
+    
+    height: 3vw;
+    width: 3vw;
+    
+
+}
