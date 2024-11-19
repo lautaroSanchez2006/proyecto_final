@@ -4,25 +4,35 @@
 
     margin: 0;
     font-family: Roboto, Georgia;
+    scroll-behavior: smooth;
+
+    scroll-margin-top: 15vh; /* Esto evita que al utilizar un link para ir a una seccion de la pagina el header tape el contenido */
 }
 
 body {
 
     display: flex;
+    width: 100%;
     flex-direction: column;
     min-height: 100vh; /* La altura minima de la pagina es todo la pantalla */
+    overflow: visible;
 }
 
 header {
+
     display: flex;
+    position: sticky; /* Esto hace que el header se mantenga fijo en la pantalla */
+    top: 0;
 
     height: 7vw;
+    width: 100%;
     background-color: #2B2D42;
-
 
     flex-direction: row;
     justify-content: space-between; /* Deja un espacio entre medio de los elementos */
     align-items:  center;
+
+    z-index: 10;
 
 }
 
@@ -53,7 +63,7 @@ header ul li a {
     font-weight: 500;
 
 
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     text-decoration: none;
 
     transition: all 0.5s ease-in-out;
@@ -65,7 +75,7 @@ header ul li a:hover {
 }
 
 
-/* MAIN */
+/* ----------------------------------------- MAIN -------------------------------------*/
 
 main h1 {
 
@@ -75,8 +85,14 @@ main h1 {
     color: white;
 }
 
+span {
+    margin: 1vw;
+    color: #dfeaff;
+    font-size: 1.6vw;
+}
 
 main h2 {
+    
     font-size: 5vw;
 }
 
@@ -86,7 +102,7 @@ main h2, p {
     color: white;
 }
 
-.sobre_mi {
+#sobre_mi {
     display: flex;
     justify-content: space-between;
     background-color: #EF233C;
@@ -101,7 +117,7 @@ section .foto_cv {
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%); /* Recorta el borde izquierdo en diagonal de la imagen */
 }
 
-.proyectos {
+#proyectos {
     display: flex;
     justify-content: space-between;
  
@@ -115,7 +131,8 @@ section .foto_proyecto {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 
-/* FOOTER */
+
+/* ----------------------------- FOOTER ---------------------------------------- */
 
 footer {
 
